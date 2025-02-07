@@ -1,0 +1,10 @@
+/* Add this to your CSS file */
+.navbar .d-flex i {
+    font-size: 1.2rem;  /* Increase icon size */
+    color:black;       /* Ensure icons are visible */
+  }
+  
+  .navbar .d-flex .mx-2 {
+    margin-right: 1rem;  /* Adjust margin between icons */
+  }
+  
