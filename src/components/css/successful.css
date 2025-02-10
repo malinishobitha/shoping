@@ -1,0 +1,41 @@
+.successful {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.successful h5 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.successful img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.successful p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.successful button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgb(248, 150, 250);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.successful button:hover{
+    background-color:  rgb(247, 120, 188);
+    color:white;
+}

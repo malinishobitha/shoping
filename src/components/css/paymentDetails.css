@@ -1,0 +1,150 @@
+.payment-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+.payment-form{
+    max-width: 450px;
+    border: 0px solid black;
+}  
+ .contact-det input{
+     display:flex;
+     flex-direction: row;
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+ .person-det input{
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ .person-det{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .state-det{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+ }
+  .state-det input{
+    width: 45%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .payment-form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .payment-form select {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .state-det input{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+  .coupon-section {
+    flex: 1;
+    max-width: 500px;
+    background-color: #ddecfb;
+}
+
+/* Discount Box */
+.coupan {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.coupan input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apply-btn {
+    padding: 8px 15px;
+    background-color:rgb(255, 143, 162);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: rgb(252, 131, 151);
+}
+/* Payment Options */
+.payment-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.payment-option input {
+    transform: scale(1.2); /* Bigger radio buttons */
+}
+.total-amount {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-amount h6 {
+    display: flex;
+    justify-content: space-between; /* Equal spacing */
+    font-size: 16px;
+    font-weight: 500;
+}
+.buy{
+    padding: 8px 15px;
+    background-color:rgb(255, 143, 162);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 170px;
+}
+.buy button{
+    text-align: center;
+    
+}

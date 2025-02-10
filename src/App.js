@@ -1,18 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";  
-import HomePage from './components/home';  // Import your HomePage component
+import HomePage from './components/home'; 
+import ProductDetails from './components/ProductDetails';
+import CustomerDetails from './components/customerDetails';
+import PaymentDetails from './components/paymentDetails';
+import Successful from './components/successful';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const App = () => {
   return (
     <Router>
-      <Navbar /> {/* Navbar is now common for all pages */}
+      <Navbar />
       <Routes>
-        {/* Define your route for HomePage */}
         <Route path="/" element={<HomePage />} />
-        {/* Add other routes if needed */}
+        <Route path="/ProductDetails" element={<ProductDetails />} />
+        <Route path="/customerDetails" element={<CustomerDetails />} />
+        <Route path="/paymentDetails" element={<PaymentDetails />} />
+        <Route path="/successful" element={<Successful />} />
+
       </Routes>
     </Router>
   );
