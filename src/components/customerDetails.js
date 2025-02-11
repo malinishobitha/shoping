@@ -79,7 +79,7 @@ function CustomerDetails() {
                 <p>₹{product.price * product.quantity}</p> 
               </div>
             </div>
-            <button onClick={() => removeFromCart(product.id)} className="delete-btn">Delete</button>
+            <button onClick={() => removeFromCart(product.id)} className="delete-btn"><i class="bi bi-trash"></i></button>
           </div>
         ))}
       </div>

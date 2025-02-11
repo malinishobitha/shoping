@@ -3,7 +3,7 @@ import bannerImage from '../images/LA_Girl_header.jpg';
 import skincare from '../images/skincare.png';
 import HairImage from '../images/hair.png';
 import Makeup from '../images/makeup.png';
-import Bath from '../images/image 2.png';
+import Bath from '../images/image 2 (2).png';
 import Group from '../images/Frame 12.png';
 import Serum from '../images/Group 517.png';
 import centellaSerum from '../images/Group 518.png';
@@ -122,8 +122,9 @@ function HomePage() {
                    <button>Add to Cart</button>
                     </div>
                 </div>
-                <div className="banner-image">
+                <div className="banner-image1">
                 <img src={bannerImage1} alt="cream" />
+                <button className="shop-button">Shop Now</button>
                 </div>
                 <div className="category">
                     <h2>New Arrivals</h2>

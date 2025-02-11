@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./css/paymentDetails.css"; 
+import Googlepay from '../images/download (2).png';
+import Phonepay from '../images/images (1).png';
+import Visa from '../images/visa.png';
 
 const PaymentDetails = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +18,7 @@ const PaymentDetails = () => {
   });
 
   const [cartTotal, setCartTotal] = useState(500); 
-  const shippingPrice = 59; // Fixed shipping price
+  const shippingPrice = 59; 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -56,20 +59,22 @@ const PaymentDetails = () => {
         </div>
         <div className='state-det'>
         <input type="text" name="city" placeholder="City" value={formData.city} onChange={handleChange} required />
-        <select name="state" value={formData.state} onChange={handleChange} required>
-          <option value="">Select State</option>
-          <option value="Tamil Nadu">Tamil Nadu</option>
-          <option value="Karnataka">Karnataka</option>
-          <option value="Kerala">Kerala</option>
-        </select>
+        <select name="state" value={formData.state} onChange={handleChange} required className="state-dropdown">
+  <option value=""> State</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+</select>
+
         <input type="text" name="zip" placeholder="Zip Code" value={formData.zip} onChange={handleChange} required />
 </div>
       </form>
 </div>
       {/* Discount Section */}
       <div className="coupon-section">
-
+       <h5>Coupan</h5>
         <div className='coupan'>
+          
         <input type="text" name="discountCode" placeholder="Discount Code" value={formData.discountCode} onChange={handleChange} />
         <button onClick={applyDiscount} className="apply-btn">Apply</button>
       </div>
@@ -87,24 +92,27 @@ const PaymentDetails = () => {
       <div className="payment-cart">
   <h5>Payment </h5>
   
-  <div className="payment-option">
-    <input type="radio" id="google-pay" name="paymentMethod" value="Google Pay" />
-    <label htmlFor="google-pay">Google Pay</label>
-  </div>
 
   <div className="payment-option">
     <input type="radio" id="credit-card" name="paymentMethod" value="Credit Card" />
-    <label htmlFor="credit-card">Credit Card</label>
+    <label htmlFor="credit-card"> <img src={Visa} alt="googlepay" />Credit Card</label>
   </div>
-
+<hr></hr>
+  <div className="payment-option">
+    <input type="radio" id="google-pay" name="paymentMethod" value="Google Pay" />
+    <label htmlFor="google-pay"> <img src={Googlepay} alt="googlepay" />
+    Google Pay</label>
+  </div>
+  <hr></hr>
   <div className="payment-option">
     <input type="radio" id="phone-pay" name="paymentMethod" value="Phone Pay" />
-    <label htmlFor="phone-pay">Phone Pay</label>
+    <label htmlFor="phone-pay"> <img src={Phonepay} alt="phonepay" />
+    Phone Pay</label>
   </div>
-
+<hr></hr>
   <div className="payment-option">
     <input type="radio" id="other-apps" name="paymentMethod" value="Other Apps" />
-    <label htmlFor="other-apps">Other API Apps</label>
+    <label htmlFor="other-apps">  Other API Apps</label>
   </div>
 </div>
 <a href="successful"><button className="buy">Buy Now</button></a>

@@ -1,10 +1,30 @@
 /* Add this to your CSS file */
 .navbar .d-flex i {
-    font-size: 1.2rem;  /* Increase icon size */
-    color:black;       /* Ensure icons are visible */
+    font-size: 1.2rem;  
+    color:black;      
   }
   
   .navbar .d-flex .mx-2 {
-    margin-right: 1rem;  /* Adjust margin between icons */
+    margin-right: 1rem;  
   }
-  
+  .navbar-collapse{
+   
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-nav{
+    margin: auto;
+  }
+  .nav-item a{
+    color: black;
+    font-weight: bold;
+  }
+  .navbar-brand{
+    font-weight: bold;
+  }
+  .nav-icons{
+    min-width: 180px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 

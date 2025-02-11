@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
 .payment-form{
     max-width: 450px;
@@ -39,13 +40,34 @@
     display: flex;
     flex-wrap: wrap;
  }
-  .state-det input{
-    width: 45%;
+ .state-det input{
+    width: 30%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  .state-dropdown {
+    width: 40%;
+    padding: 10px 15px;  
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    font-size: 16px;
+    color: #333; 
+    cursor: pointer; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .state-dropdown:focus {
+    outline: none; 
+  }
+  
+  .state-dropdown option {
+    font-size: 16px; 
+    padding: 10px;
+  }
+  
+
   .payment-form textarea{
     width: 100%;
     padding: 8px;
@@ -60,13 +82,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  .state-det input{
-    width: 20%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+ 
  
   .coupon-section {
     flex: 1;
@@ -79,18 +95,21 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: space-evenly;
 
 }
 
 .coupan input {
     flex: 1;
     padding: 8px;
+    width: 40%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-left: 10px;
 }
 
 .apply-btn {
-    padding: 8px 15px;
+    padding: 8px 15px;                                                                                   
     background-color:rgb(255, 143, 162);
     color: white;
     border: none;
@@ -141,10 +160,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100px;
-    margin-left: 170px;
+    width: 300px;
+    margin-left: 100px;
 }
 .buy button{
     text-align: center;
     
+}
+.payment-option img{
+    width: 50px;
 }

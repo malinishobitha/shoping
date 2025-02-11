@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="/">MyApp</a>
+        <a className="navbar-brand" href="/">Logo</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center nav-icons">
             <i className="bi bi-search mx-2"></i>
             <i className="bi bi-heart mx-2"></i> 
             <i className="bi bi-cart3 mx-2"></i> 
