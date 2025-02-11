@@ -71,7 +71,7 @@ const PaymentDetails = () => {
       </form>
 </div>
       {/* Discount Section */}
-      <div className="coupon-section">
+      <div className="coupan-section">
        <h5>Coupan</h5>
         <div className='coupan'>
           

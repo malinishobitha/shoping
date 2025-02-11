@@ -10,7 +10,7 @@ function Successful() {
                 <h5>Payment</h5>
                 <img src={successfulImage} alt="success"/>
             <p>Payment Successful!</p>
-            <a href='home'><button>Go To Home Page</button></a>
+            <a href='/'><button>Go To Home Page</button></a>
             </div>
             </div>
     );

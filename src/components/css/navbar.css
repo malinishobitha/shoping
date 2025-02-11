@@ -14,6 +14,9 @@
   }
   .navbar-nav{
     margin: auto;
+    border: 0px solid black;
+    width: 380px;
+    justify-content: space-evenly;
   }
   .nav-item a{
     color: black;
@@ -23,8 +26,9 @@
     font-weight: bold;
   }
   .nav-icons{
-    min-width: 180px;
+    min-width: 210px;
     display: flex;
     justify-content: space-evenly;
+    border: 0px solid black;
   }
  

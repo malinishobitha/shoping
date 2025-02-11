@@ -306,9 +306,30 @@
     .product-image {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
+    .shop-button {
+      
+      bottom: 7%;
+      right: 10%;
+      padding: 5px;
+      font-size: 5px; 
+      width: 40px;
+    }
   
     .footer {
       flex-direction: column;
       text-align: center;
     }
+    .footer {
+      padding: 15px;
   }
+
+  .footerdetails {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footerdet {
+      text-align: center;
+  }
+}
+  

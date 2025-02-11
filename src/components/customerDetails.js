@@ -26,18 +26,25 @@ function CustomerDetails() {
   const removeFromCart = (id) => {
     setCart(cart.filter((product) => product.id !== id));
   };
+ 
   const updateQuantity = (id, action) => {
     setCart(
       cart.map((product) =>
         product.id === id
           ? {
               ...product,
-              quantity: action === "increase" ? product.quantity + 1 : product.quantity - 1,
+              quantity:
+                action === "increase"
+                  ? product.quantity + 1
+                  : product.quantity > 0
+                  ? product.quantity - 1
+                  : 0, // Prevent quantity from going below 0
             }
           : product
       )
     );
   };
+  
 
   useEffect(() => {
     const newTotal = cart.reduce((acc, product) => acc + (product.price * product.quantity), 0);
@@ -70,7 +77,7 @@ function CustomerDetails() {
               <div className='price'>
                 <p>Price: ₹{product.price}</p>
               </div>
-              <div className="quantity">
+              <div className="quantities">
                 <button onClick={() => updateQuantity(product.id, "decrease")}>-</button>
                 <span>{product.quantity}</span>
                 <button onClick={() => updateQuantity(product.id, "increase")}>+</button>
